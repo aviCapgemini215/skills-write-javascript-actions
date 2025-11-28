@@ -66,6 +66,6 @@ jobs:
         if: contains(github.event, ${{ env.EXPECTED_METADATA }})
         uses: skills/action-update-step@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.AVI_TOKEN }}
           from_step: 6
           to_step: X
